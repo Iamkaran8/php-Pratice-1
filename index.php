@@ -244,5 +244,47 @@
 
 <?php
     #Cookie
-    setcookie("Name","Karan",time()+ (20),"/");
+    // setcookie("Name","Karan",time()+ (20),"/");
+
+    
+
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Session</title>
+</head>
+<body>
+    <form action="" method="post">
+        this is login page
+        <a href="footer.php">This is Footer page</a>
+    </form>
+    <?php
+    $_SESSION["username"] ="karan";
+    $_SESSION["password"] ="karan@123";
+    ?>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,3 +12,9 @@
     </footer>
 </body>
 </html>
+<?php
+// session_start();
+// echo $_SESSION["username"] ;
+
+// Session topic is not fully completed
+?>

@@ -250,7 +250,7 @@
 
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -263,15 +263,45 @@
         <a href="footer.php">This is Footer page</a>
     </form>
     <?php
-    $_SESSION["username"] ="karan";
-    $_SESSION["password"] ="karan@123";
+    // $_SESSION["username"] ="karan";
+    // $_SESSION["password"] ="karan@123";
     ?>
 </body>
-</html>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVER</title>
+</head>
+<body>
+    Server Key WOrd
+    <form action="<?php $_SERVER["PHP_SELF"]?>" method="post">
+        Username : <input type="text" name="Name"> <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <?php
+    // $Username = $_POST["Name"] ;
+    // echo $Username;
+    ?>
+</body>
+</html> -->
 
 
 
 
+
+
+<?php 
+     #Hashing
+    // $name = "KAran";
+    // echo "$name<br>";
+    // $hash = password_hash($name,PASSWORD_DEFAULT);
+    // echo $hash;
+?>
 
 
 

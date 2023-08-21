@@ -304,7 +304,14 @@
 ?>
 
 
+<?php
 
+include("mysql.php");
+$sql = "INSERT INTO users(user,password)
+        VALUES('admin3','admin3')";
+        mysqli_query($conn,$sql);
+        mysqli_query($conn,$sql);
+?>
 
 
 

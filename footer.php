@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
         <span>Copyright @2023</span>
     </footer>
 </body>
-</html>
+</html> -->
 <?php
 // session_start();
 // echo $_SESSION["username"] ;

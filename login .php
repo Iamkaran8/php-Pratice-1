@@ -28,6 +28,37 @@ $reg_password=$_POST["reg_password"];
 $reg_query ="INSERT INTO `reg` (`id`, `username`, `password`) VALUES ('[value-1]', '$reg_name', '$reg_password')" ;
 mysqli_query($conn,$reg_query);
 
+
+
+if(!isset($_POST['submit'])){
+    $Uname = $_POST['Uname'];
+    $password = $_POST['password'];
+$query  = "SELECT * FROM `reg` WHERE username=$Uname AND password= $password";
+$queryfire = mysqli_query($conn,$query );
+$user_data = mysql_fetch_array($queryfire);
+$num  = mysqli_num_rows($queryfire);
+if(mysqli_num_rows($queryfire)>0){
+echo "karan";
+}else{
+    echo "lotus";
+}
+
+// if($result_check > 0){
+//     echo "Login Successful";
+// }else{
+//     echo "You entered Wrong password";
+// }
+}
+$delete=mysqli_query($conn,"DELETE FROM studentinfo WHERE id='$id'");
+            if(mysqli_num_rows($delete)>0)
+            {
+                echo "not don";
+                header('location:student.php');
+            }
+            else{
+                echo "done delete.";
+                header('location:student.php');
+            }
 ?>
 
 <body>
